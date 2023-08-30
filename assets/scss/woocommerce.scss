@@ -1,0 +1,22 @@
+// scss-docs-start import-stack
+// Configuration
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/maps";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/utilities";
+
+$woocommerce__color-error: #e2401c;
+$woocommerce__color-success: #0f834d;
+$woocommerce__color-info: #3d9cd2;
+$color__text-main: var(--#{$variable-prefix}primary);
+$color__link: var(--#{$variable-prefix}primary);
+$color__rating_star: #F2B827;
+
+@import "fonts";
+@import "abstracts/variables";
+@import "woocommerce/single-product";
+@import "woocommerce/components";
+@import "woocommerce/widgets";
+@import "woocommerce/tables";
+@import "woocommerce/products";

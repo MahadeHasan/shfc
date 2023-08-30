@@ -1,0 +1,49 @@
+ .woocommerce-Tabs-panel{
+	border: 1px solid $color-gray-800;
+	background-color: $color-gray-850;
+	border-radius: 0 0 15px 15px;
+	margin-top: -1px; 
+}
+.quantity input {
+	padding: 8px 16px;
+	background-color: $color-gray-850;
+	border: 1px solid $color-gray-800;
+}
+.input-group-text { 
+	padding: 0 16px;
+	font-size: 1rem; 
+	color: $color-gray-500;  
+	background-color: $color-gray-850;
+	border: 2px solid $color-gray-800;
+	border-radius: .375rem;
+}
+.woocommerce-tabs{ 
+	.nav-tabs{
+		border-bottom: 0;
+		li.active{  
+			.nav-link:focus,
+			.nav-link:focus-visible,
+			.nav-link{
+				border-color: $color-gray-800;
+				border-bottom-color: transparent; 
+				background-color: $color-gray-850;
+			}
+		}
+		li{
+		.nav-link:hover{
+			border-color: $color-gray-800;
+			border-bottom-color: transparent;
+		}
+		}
+	}
+}
+.cart_totals,
+.related.products,
+.genz-tabs-wrapper{
+	h2{  
+		color: $color-white;
+		font-size: 28px;
+		line-height: 1.29;
+		font-family: $font-heading;
+	}
+}

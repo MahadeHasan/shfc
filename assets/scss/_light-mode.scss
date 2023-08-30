@@ -1,0 +1,75 @@
+[data-theme="light"] {
+    --genz-font-heading: Noto Sans;
+    --genz-font-text: Noto Sans;
+    --genz-font-3xs: 10px;
+    --genz-font-xxs: 12px;
+    --genz-font-xs: 13px;
+    --genz-font-sm: 14px;
+    --genz-font-md: 16px;
+    --genz-font-md-2: 15px;
+    --genz-font-lg: 18px;
+    --genz-font-xl: 20px;
+    --genz-font-2xl: 22px;
+    --genz-font-3xl: 58px;
+    --genz-color-gray-100: #1cc2e7;
+    --genz-color-gray-200: #66768F;
+    --genz-color-gray-300: #7F92B0;
+    --genz-color-gray-400: #94A9C9;
+    --genz-color-gray-500: #2e548c;
+    --genz-color-gray-600: #7E9CC7;
+    --genz-color-gray-700: #4E658A;
+    --genz-color-gray-800: #C8D5E8;
+    --genz-color-gray-850: #E8EDF5;
+    --genz-color-gray-900: #F9FBFF;
+    --genz-color-gray-950: #F9FBFF;
+    --genz-color-white: #344161;
+    .logo-dark{
+      display: block;
+    }
+    .logo-dark-mode,
+    .logo-white{
+      display: none;
+    }
+    .input-name.border-gray-500,
+    .input-email.border-gray-500{
+      border-color: rgba(34, 47, 67, .1) !important;
+    }
+
+    .mobile-logo{
+      button.btn-close{
+        filter: invert(0);
+      }
+    }
+    .hover-neon { 
+      &:hover {
+        background: linear-gradient($color-gray-950-day, $color-gray-950-day) padding-box, linear-gradient(to right, rgba(14, 165, 234, 1), rgba(11, 209, 209, 1)) border-box;
+      }
+    }
+    .box-banner-4  .box-socials,
+    .box-socials{
+      a {
+        svg{ 
+          color: #0B1222; 
+        }
+        &:hover svg{
+          color: $color-gray-950;
+        }
+      }
+    }
+    .card-style-1 .card-image .card-info .box-author .author-info{
+      span.color-gray-700{
+        color: $color-gray-800-day;
+      }
+    }
+
+  }
+
+  [data-theme="dark"] { 
+    .alert-dismissible .btn-close{ 
+      filter: invert(1);
+    }
+    .logo-white-mode,
+    .logo-dark{
+      display: none;
+    }
+  }

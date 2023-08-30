@@ -1,0 +1,194 @@
+.widget {
+    
+    .wp-block-archives-list,
+    .wp-block-group__inner-container {
+        h2 {
+            font-weight: 700;
+            font-size: 18px !important;
+            line-height: 28px;
+            margin-bottom: 30px;
+            background:  $background-linear-2;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            display: block;
+        }
+
+        a {
+            color: var(--genz-color-gray-500);
+        }
+    }
+}
+
+.box-sidebar {
+    .wp-block-archives-list {
+        a {
+            color: var(--genz-color-gray-500);
+        }
+    }
+    
+    .wp-block-search,
+    .wp-block-group__inner-container {
+        .wp-block-search__label,
+        h2 {
+            font-weight: 700;
+            font-size: 20px !important;
+            line-height: 27px;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            background:  $background-linear-2;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            display: block;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background-color: $color-brand-1;
+                width: 96px;
+                height: 3px;
+                bottom: 0;
+                left: 0;
+            }
+        }
+
+
+    }
+}
+
+.box-sidebar {
+    .wp-block-group__inner-container {
+        h2 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 27px;
+            padding-bottom: 10px;
+            margin-bottom: 40px;
+            background:  $background-linear-2;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    }
+}
+
+.head-sidebar {
+    position: relative;
+
+    .line-bottom {
+        padding-bottom: 10px;
+        margin-bottom: 40px;
+        background: $background-linear-2; 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        &::before {
+            height: 3px;
+            width: 96px;
+            content: "";
+            background-color: $color-brand-1;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+    }
+}
+
+.box-sidebar {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 16px;
+    padding: 25px 25px 0px 25px;
+    margin-bottom: 30px;
+}
+
+.list-posts {
+    .item-post {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        margin-bottom: 20px;
+
+        .image-post {
+            min-width: 64px;
+            max-width: 64px;
+            margin-right: 15px;
+
+            img {
+                height: 64px;
+                width: 64px;
+                border-radius: 50%;
+            }
+        }
+
+        .info-post {
+            position: relative;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+
+            a {
+                &:hover {
+                    h6 {
+                        color: $color-brand-1 !important;
+                    }
+                }
+            }
+
+            ul {
+                padding-left: 25px;
+                margin-bottom: 20px;
+                margin-top: 15px;
+
+                li {
+                    list-style: disc;
+                }
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 0px;
+
+            .info-post {
+                border-bottom-width: 0px;
+            }
+        }
+    }
+}
+
+.box-author-small {
+    display: flex;
+    align-items: center;
+
+    img {
+        display: inline-block;
+        margin-right: 15px;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+    }
+
+    .author-info {
+        width: 100%;
+    }
+}
+
+.list-comments {
+    position: relative;
+
+    .item-comment {
+        border-bottom-width: 1px;
+        border-style: solid;
+        padding-bottom: 23px;
+        margin-bottom: 23px;
+
+        &:last-child {
+            border-bottom: 0px;
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.box-sidebar {
+    padding: 25px;
+
+    li:last-child,
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+
+
+}
+
+.footer {
+    .widget {
+
+        ul,
+        ol {
+            list-style: none;
+            padding-left: 0;
+        }
+    }
+}

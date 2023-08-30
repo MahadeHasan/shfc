@@ -1,0 +1,12 @@
+.sidebar,
+.footer{
+    .widget_block{
+        h2{
+            font-weight: 700;
+            color: $color-white;
+            background: $background-linear;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

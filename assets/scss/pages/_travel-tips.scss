@@ -1,0 +1,10 @@
+.btn-number-arts {
+    position: absolute;
+    top: 0px;
+    left: 110%;
+    min-width: 120px;
+    pointer-events: none;
+    &:hover{
+        --genz-color-gray-700: #fff;
+    }
+}

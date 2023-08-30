@@ -1,0 +1,425 @@
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/maps';
+@import 'bootstrap/scss/mixins';
+
+
+
+@import "abstracts/variables";
+@import "sidebar";
+@import "list-group";
+@import "elements/common";
+@import "elements/gallery";
+@import "blocks";
+
+svg {
+    fill: currentColor;
+}
+
+a>svg {
+    transition: all 0.3s ease 0s;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.content-detail {
+    p:empty {
+        display: none;
+    }
+}
+
+.footer-logo img {
+    max-width: 200px;
+}
+
+.card-list-posts .card-image img {
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.has-tag a:nth-child(n+4) {
+    display: none;
+}
+
+.card-blog-1 .card-image img {
+    object-fit: cover;
+}
+
+/* sticky bage */
+.sticky-badge {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 6px 15px;
+    font-size: var(--genz-font-xs, 13px);
+    font-weight: 700;
+    line-height: 16px;
+    background-color: $color-brand-1;
+    color: #ffffff;
+}
+
+/* Comments */
+.comment-form-cookies-consen label {
+    top: -4px;
+    position: relative;
+    margin-left: 10px;
+}
+
+.comment-respond {
+    margin-bottom: 50px;
+}
+
+.info-icon {
+    padding: 10px 30px 10px 25px;
+}
+
+.btn-tags>a,
+.color-gray-500>a,
+.color-gray-300>a {
+    color: inherit;
+}
+
+.comment-form-comment textarea::placeholder,
+.comment-form-author input::placeholder,
+.comment-form-email input::placeholder {
+    color: #{$color-gray-300};
+    opacity: 0.5;
+}
+
+.comment-left .box-author .author-info span {
+    margin: 5px 0;
+    display: block;
+}
+
+.card-list-posts.card-list-posts-small .card-image {
+    max-width: 190px;
+}
+
+.post-password-form {
+    .form-control {
+        height: 46px;
+        border-color: $color-gray-800;
+        font-size: 14px;
+        line-height: 1;
+        background-color: $color-gray-850;
+        display: inherit;
+    }
+
+    .btn {
+        padding: 12px 16px;
+    }
+}
+
+/* footer */
+.footer-social li:first-child a {
+    padding-left: 0;
+}
+
+.footer-social li a:hover {
+    transform: translateY(-3px);
+    color: rgb(14, 165, 234) !important;
+}
+
+footer .widget ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.footer ul.menu li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.footer ul.menu li a {
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    display: block;
+    padding: 0px 0px 0px 0px;
+    transition-duration: 0.2s;
+}
+
+.footer ul.menu li a:hover {
+    color: #0EA5EA !important;
+    transition-duration: 0.2s;
+    padding-left: 3px;
+}
+
+.footer {
+    ul.menu {
+        li {
+            a {
+                color: var(--genz-color-gray-500);
+            }
+        }
+    }
+}
+
+.footer .about-widget p {
+    margin-bottom: 20px;
+}
+
+.about-widget .wp-block-image {
+    margin-bottom: 20px;
+}
+
+.content-detail p.has-text-color strong,
+.content-detail.border-gray-800 h1,
+.content-detail.border-gray-800 h2,
+.content-detail.border-gray-800 h3,
+.content-detail.border-gray-800 h4,
+.content-detail.border-gray-800 h5,
+.content-detail.border-gray-800 h6 {
+    color: #b9e0f2;
+    margin-bottom: 30px;
+}
+
+.content-detail {
+    font-size: 18px;
+    line-height: 1.56;
+
+    p {
+        margin-bottom: 1.25rem;
+        line-height: 1.56;
+    }
+
+    .wp-block-cover.has-background-dim {
+        margin-bottom: 20px;
+    }
+}
+
+.box-swiper {
+    text-align: left;
+
+    .card-testimonials {
+        .card-info {
+            p {
+                font-size: 14px;
+                list-style: inherit;
+            }
+        }
+    }
+}
+
+.box-topics {
+    p {
+        font-size: 13px;
+        line-height: 18px;
+    }
+}
+
+.box-socials {
+    a {
+        svg {
+            color: #fff;
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+    }
+}
+
+.box-banner-4 {
+    .box-socials {
+        a svg {
+            color: #fff;
+            position: relative;
+            left: 7px;
+            top: 1px;
+        }
+    }
+}
+
+.card-pricing-bottom {
+    li {
+        font-size: 14px;
+    }
+}
+
+.image-detail img {
+    width: 100%;
+}
+
+.info-icon {
+    padding-right: 25px;
+}
+
+.contact-information {
+    margin-left: -15px;
+    margin-right: -15px;
+
+    li {
+        display: inline-block;
+        padding: 0 15px;
+        text-align: left;
+        max-width: 240px;
+
+        .info-icon {
+            padding: 15px;
+            width: 40px;
+            height: auto;
+            background-size: contain;
+            object-fit: cover;
+            margin-right: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.mobile-logo {
+    button.btn-close {
+        filter: invert(1);
+        font-size: 20px;
+        top: -5px;
+        position: relative;
+    }
+}
+
+.list-post-style3 {
+    .card-list-posts-small {
+        img {
+            width: 170px;
+            height: 137px;
+        }
+    }
+}
+
+.card-info {
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
+
+.box-subscriber .mc-response {
+    .alert {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 15px;
+    }
+
+    .alert-dismissible {
+        .btn-close {
+            position: relative;
+        }
+    }
+}
+
+.wp-block-cover,
+.wp-block-cover-image {
+    margin-bottom: 30px;
+}
+
+.wp-block-video {
+    figcaption {
+        color: $color-gray-500;
+    }
+}
+
+
+
+
+
+//
+// Dark Light Switcher
+//
+.form-check {
+    display: block;
+}
+
+.form-check-input {
+    width: $form-check-input-width;
+    height: 1.375rem;
+    background-color: #{$color-gray-800};
+    border-color: #{$color-gray-800};
+
+    &:hover,
+    &:active,
+    &:focus {
+        border-color: #{$color-gray-800};
+        outline: 0;
+        box-shadow: none;
+    }
+
+    &:checked {
+        background-color: #{$color-gray-800};
+        border-color: #{$color-gray-800};
+
+    }
+}
+
+//
+// Switch
+//
+.form-switch {
+    .form-check-input {
+        width: 2.5rem;
+        background-image: url('../../assets/imgs/day.svg');
+        background-position: left center;
+        cursor: pointer;
+
+        &:focus {
+            background-image: url('../../assets/imgs/day.svg');
+        }
+
+        &:checked {
+            @if $enable-gradients {
+                background-image: escape-svg($form-switch-checked-bg-image),
+                var(--#{$prefix}gradient);
+            }
+
+            @else {
+                background-image: url('../../assets/imgs/night.svg');
+            }
+        }
+    }
+
+}
+
+.form-check-inline {
+    display: inline-block;
+}
+
+
+//Book Now Buotton css
+.book-now {
+    display: block;
+    margin-top: 8px;
+}
+
+.main-menu .book-now a {
+    padding: 5px 20px !important;
+    color: #fff;
+}
+
+.main-menu .book-now a:hover {
+    color: #fff !important;
+}
+
+.mobile-menu li.book-now a {
+    color: var(--genz-color-gray-900) !important
+}
+
+.elementor-widget:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+.list-comments .item-comment {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+}

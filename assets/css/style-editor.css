@@ -1,0 +1,111 @@
+.editor-styles-wrapper {
+  background-color: var(--genz-color-gray-900, #0F172A);
+  color: var(--genz-color-gray-500, #94A9C9);
+  font-family: var(--genz-font-text, "Noto Sans", sans-serif);
+}
+
+.editor-styles-wrapper h1, .editor-styles-wrapper h2, .editor-styles-wrapper h3, .editor-styles-wrapper h4, .editor-styles-wrapper h5, .editor-styles-wrapper h6 {
+  font-family: var(--genz-font-heading, "Noto Sans", sans-serif);
+}
+
+.editor-styles-wrapper .is-layout-flow > .alignleft {
+  padding-left: 96px;
+}
+
+.editor-styles-wrapper .page-links {
+  margin-top: 20px;
+}
+
+.editor-styles-wrapper .gallery-size-thumbnail {
+  margin-top: 15px;
+}
+
+.editor-styles-wrapper .rich-text {
+  line-height: 1.56;
+}
+
+.editor-styles-wrapper .rich-text a {
+  text-decoration: none;
+}
+
+.editor-styles-wrapper .mce-content-body table {
+  width: 100%;
+  text-align: center;
+}
+
+.editor-styles-wrapper .wp-block-freeform.block-library-rich-text__tinymce p {
+  line-height: 1.56;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-block-search__input {
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.wp-block-search__button {
+  background: var(--genz-background-linear, linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea) var(--x, 0)/200%);
+  color: #ffffff;
+  border-radius: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+}
+
+.editor-styles-wrapper .has-large-font-size.rich-text {
+  font-size: 2rem !important;
+  color: #ffffff;
+}
+
+.editor-styles-wrapper .has-large-font-size.rich-text a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wp-block-paragraph.rich-text strong {
+  color: #b9e0f2;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+  .editor-styles-wrapper .is-layout-flow > .alignleft {
+    padding-left: 24.5%;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .editor-styles-wrapper .is-layout-flow > .alignleft {
+    padding-left: 16.5%;
+  }
+}
+
+/*# sourceMappingURL=style-editor.css.map */

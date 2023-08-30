@@ -1,0 +1,52 @@
+.posts-loading {
+    .skeleton-card {
+        background-size: contain;
+        width: 100%;
+        background-repeat: no-repeat;
+        animation: skeleton-loading 1s linear infinite alternate;
+
+        &.card-list-posts-small {
+            background-image: url('../imgs/skeleton/list-view2.png');
+        }
+
+        &.card-list-posts {
+            background-image: url('../imgs/skeleton/list-view2.png');
+        }
+
+        &.card-style-1,
+        &.card-blog-1,
+        &.card-blog-1.card-blog-2 {
+            background-image: url('../imgs/skeleton/grig-view-lg.png');
+            background-size: cover
+        }
+    }
+
+}
+
+.posts-loading {
+
+    .skeleton-card>*,
+    .card-list-posts>* {
+        opacity: 0;
+        transition: all .3s ease-in-out;
+    }
+}
+
+
+
+.posts-loading {
+    .card-list-posts {
+        animation: skeleton-loading 1s linear infinite alternate;
+    }
+
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 80%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}

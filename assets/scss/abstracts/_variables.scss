@@ -1,0 +1,99 @@
+$prefix: genz-;
+//1.FONT
+
+$font-text: var(--genz-font-text, 'Noto Sans', sans-serif);
+$font-heading: var(--genz-font-heading, 'Noto Sans', sans-serif);
+$font-3xs: var(--genz-font-3xs, 10px);
+$font-xxs: var(--genz-font-xxs, 12px);
+$font-xs: var(--genz-font-xs, 13px);
+$font-sm: var(--genz-font-sm, 14px);
+$font-md: var(--genz-font-md, 16px);
+$font-md-2: var(--genz-font-md-2, 15px);
+$font-lg: var(--genz-font-lg, 18px);
+$font-xl: var(--genz-font-xl, 20px);
+$font-2xl: var(--genz-font-2xl, 22px);
+$font-3xl: var(--genz-font-3xl, 58px);
+//2.COLOR
+// New Ecom
+$color-black: var(--genz-color-black, #000000);
+$color-brand-1: var(--genz-color-brand-1, #0EA5EA);
+$color-brand-2: var(--genz-color-brand-2, #1CC2E7);
+$color-brand-3: var(--genz-color-brand-3, #0EA5EA);
+$color-border-1: var(--genz-color-border-1, #D5DFE4);
+$color-gray-50: var(--genz-color-gray-50, #E6F0FF);
+$color-gray-100: var(--genz-color-gray-100, #D8E6FB);
+$color-gray-200: var(--genz-color-gray-200, #C9DAF5);
+$color-gray-300: var(--genz-color-gray-300, #B8CDEB);
+$color-gray-400: var(--genz-color-gray-400, #A7BDDD);
+$color-gray-500: var(--genz-color-gray-500, #94A9C9);
+$color-gray-600: var(--genz-color-gray-600, #7F92B0);
+$color-gray-700: var(--genz-color-gray-700, #66768F);
+$color-gray-800: var(--genz-color-gray-800, #222F43);
+$color-gray-850: var(--genz-color-gray-850, #131C31);
+$color-gray-900: var(--genz-color-gray-900, #0F172A);
+$color-gray-950: var(--genz-color-gray-950, #0B1222);
+$color-gray-950-day: var(--genz-color-gray-950-day, #F9FBFF);
+$color-gray-900-day: var(--genz-color-gray-900-day, #F9FBFF);
+$color-gray-850-day: var(--genz-color-gray-850-day, #E8EDF5);
+$color-gray-800-day: var(--genz-color-gray-800-day, #C8D5E8);
+$color-gray-700-day: var(--genz-color-gray-700-day, #4E658A);
+$color-gray-600-day: var(--genz-color-gray-600-day, #7E9CC7);
+$color-gray-500-day: var(--genz-color-gray-500-day, #2E548C);
+$color-gray-400-day: var(--genz-color-gray-400-day, #94A9C9);
+$color-gray-300-day: var(--genz-color-gray-300-day, #7F92B0);
+$color-gray-200-day: var(--genz-color-gray-200-day, #66768F);
+$color-gray-100-day: var(--genz-color-gray-100-day, #4A576A);
+$color-gray-50-day: var(--genz-color-gray-50-day, #344161);
+$color-primary: var(--genz-color-primary, #1AAEED);
+$color-secondary: var(--genz-color-secondary, #8D99AE);
+$color-success: var(--genz-color-success, #6CFFC1);
+$color-danger: var(--genz-color-danger, #FF756C);
+$color-warning: var(--genz-color-warning, #FFB067);
+$color-info: var(--genz-color-info, #27B3D2);
+$color-white: var(--genz-color-white, #d9d9d9);
+$color-green: var(--genz-color-green, #00FF8A);
+$color-yellow: var(--genz-color-yellow, #FFF500);
+$color-pink: var(--genz-color-pink, #FF6BC4);
+$color-blue: var(--genz-color-blue, #3AA1FF);
+$color-linear: var(--genz-color-linear, rgba(14, 165, 234, 1));
+$color-gray: var(--genz-color-blue, #667085);
+
+$color-link: var(--genz-color-link, #4281de);
+
+// End New
+//3.Boxshadow
+$box-shadow-1: var(--genz-box-shadow-1, rgba(11, 209, 209, 0.2) 0px 3px 20px);
+$box-shadow-7: var(--genz-box-shadow-7, rgba(11, 209, 209, 0.3) 0px 3px 20px);
+
+$box-shadow-2: var(--genz-box-shadow-2, 0px 45px 80px rgba(0, 0, 0, 0.04));
+$box-shadow-3: var(--genz-box-shadow-3, 0px 47px 65px rgba(21, 28, 38, 0.1));
+$box-shadow-4: var(--genz-box-shadow-4, 4px 6px 23px rgba(228, 92, 35, 0.1));
+$box-shadow-5: var(--genz-box-shadow-4, 4px 4px 40px rgba(16, 24, 40, 0.1));
+$box-shadow-inner: var(--genz-box-shadow-inner, inset 0px 40px 80px #FCFCFC);
+$box-shadow-6: var(--genz-box-shadow-6, 0px 4px 4px rgba(0, 0, 0, 0.25));
+
+//5. Background
+// New
+$background-white: var(--genz-background-white, #ffffff);
+$color-gradient-1: var(--genz-color-gradient-1, rgba(14, 165, 234, 1));
+$color-gradient-2: var(--genz-color-gradient-2, rgba(11, 209, 209, 1));
+
+$background-linear: var(--genz-background-linear, linear-gradient(90deg, $color-gradient-1, $color-gradient-2 51%, $color-gradient-1) var(--x, 0)/ 200%);
+$background-linear-2: var(--genz-background-linear-2, linear-gradient(90deg, $color-gradient-2 0%, $color-gradient-1 100%));
+// End new
+// 6. text-shadow
+$text-shadow: var(--genz-text-shadow, 0px 4px 4px rgba(0, 0, 0, 0.25));
+
+// 7. breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    xxsm: 350px,
+    xssm: 450px,
+    xsm: 500px,
+    sm: 576px,
+    smd: 650px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px
+);

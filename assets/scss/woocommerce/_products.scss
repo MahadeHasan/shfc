@@ -1,0 +1,12 @@
+ 
+.products {
+	.product {
+		.card { 
+			background-color: $color-gray-800;
+			.price, 
+			.title {
+				color: $color-white;
+			}
+		}
+	}
+}

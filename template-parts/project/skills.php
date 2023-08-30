@@ -1,0 +1,1 @@
+<?php echo get_the_term_list(get_the_ID(), 'portfolio_skill', '<div class="box-tags wow animate__animated animate__fadeIn"><span class="btn btn-tags bg-gray-850 border-gray-800 mr-10 hover-up">', '</span><span class="btn btn-tags bg-gray-850 border-gray-800 mr-10 hover-up">', '</span></div>');

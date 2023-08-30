@@ -1,0 +1,93 @@
+// Configuration and helpers
+@import 'abstracts/variables',
+'abstracts/functions',
+'abstracts/mixins';
+
+.editor-styles-wrapper{
+    background-color: var(--genz-color-gray-900, #0F172A);
+    color: var(--genz-color-gray-500, #94A9C9);
+    font-family: var(--genz-font-text, "Noto Sans", sans-serif);
+
+    h1, h2, h3, h4, h5, h6{
+        font-family: var(--genz-font-heading, "Noto Sans", sans-serif);
+    }
+
+    .is-layout-flow>.alignleft {
+        padding-left: 96px;
+    }
+
+    .page-links{
+        margin-top: 20px;
+    }
+
+    .gallery-size-thumbnail{
+        margin-top: 15px;
+    } 
+    .rich-text{ 
+        line-height: 1.56;
+        a{
+            text-decoration: none;
+        }
+    }
+    .mce-content-body { 
+        table{
+            width: 100%;
+            text-align: center;
+        } 
+    }
+    .wp-block-freeform.block-library-rich-text__tinymce p{
+        line-height: 1.56;
+    }
+}
+
+
+ 
+
+.alignright { float: right; margin: 0 0 1em 1em; }
+.alignleft { float: left; margin: 0 1em 1em 0; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+.wp-block-search__input{
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.wp-block-search__button{
+    background: var(--genz-background-linear, linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea) var(--x, 0)/200%);
+    color: #ffffff;
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+}
+.editor-styles-wrapper .has-large-font-size.rich-text {
+	font-size: 2rem !important; 
+    color: #ffffff;
+    a{
+        color: inherit; 
+        text-decoration: none;
+    }
+}
+.wp-block-paragraph.rich-text{
+    strong{
+        color: #b9e0f2;
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 1601px) and (max-width: 1920px) {
+    .editor-styles-wrapper{    
+        .is-layout-flow>.alignleft {
+            padding-left: 24.5%;
+        }
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+    .editor-styles-wrapper{    
+        .is-layout-flow>.alignleft {
+            padding-left: 16.5%;
+        }
+    }
+}

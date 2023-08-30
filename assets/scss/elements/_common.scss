@@ -1,0 +1,56 @@
+.wp-caption-text,
+.gallery-caption,
+.bypostauthor {
+    font-variant: normal;
+}
+
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+.numeric-pagination{
+    --#{$prefix}pagination-border-width: #{$btn-border-width};
+    --#{$prefix}pagination-border-color: var(--#{$prefix}border-color);
+    --#{$prefix}link-hover-color: var(--#{$prefix}primary);
+    --#{$prefix}link-color: var(--#{$prefix}headings-color);
+    clear: both;
+    > a,
+    > span{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 40px;
+        min-height: 40px;  
+        border: var(--#{$prefix}pagination-border-width) solid var(--#{$prefix}pagination-border-color);  
+        border-radius: var(--#{$prefix}border-radius);
+        font-weight: #{$headings-font-weight};  
+        line-height: 1;
+    }
+    
+    > .current{
+        --#{$prefix}pagination-border-color: var(--#{$prefix}primary);
+        background-color: var(--#{$prefix}pagination-border-color);
+        color: #fff;
+    }
+    > span.dots{
+        --#{$prefix}pagination-border-width: 0;
+        min-width: auto;
+    }
+    > .next,
+    > .prev{
+        --#{$prefix}pagination-border-width: 0;
+        column-gap: 5px;
+        svg{
+            margin-bottom: -2px;
+        }
+    }
+}
