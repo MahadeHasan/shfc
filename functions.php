@@ -7,10 +7,10 @@
  *
  * @package WordPress
  * @subpackage genz
- * @since genz 1.0.8
+ * @since genz 1.0.0
  */
 
-define('GENZ_VERSION', '1.0.8');
+define('GENZ_VERSION', '1.0.0');
 define('GENZ_URI', get_template_directory_uri());
 define('GENZ_DIR', get_template_directory());
 define('GENZ_ASSETS', GENZ_URI . '/assets');
@@ -30,6 +30,9 @@ require get_template_directory() . '/inc/custom-meta-fields.php';
 
 require get_template_directory() . '/inc/genz-widgets.php';
 require get_template_directory() . '/inc/breadcums.php';
+
+// shfc-functions.php
+require get_template_directory() . '/inc/shfc-functions.php';
 
 
 
