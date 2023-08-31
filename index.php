@@ -21,11 +21,12 @@ $blog_column = is_active_sidebar('sidebar1') ? 8 : 12;
 get_template_part('template-parts/content/before');
 ?>
 
- 
+
 <div class="box-list-posts-index  mt-70">
 	<div class="row">
 		<div class="col-lg-<?php print esc_attr($blog_column); ?>">
 			<?php
+			echo do_shortcode('[my_first_shortcode]');
 			if (have_posts()) { ?>
 
 				<h2 class="lh-1 color-linear d-inline-block mb-10"><?php echo esc_attr__("Recent posts", "genz") ?></h2>
