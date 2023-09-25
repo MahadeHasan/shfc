@@ -74,7 +74,7 @@ function genz_register_portfolio_meta_fields($meta_boxes)
     return $meta_boxes;
 }
 
-//Featured Post Meta Field
+//Page Title Meta Field
 add_filter('ctrlbp_meta_boxes', 'genz_register_page_meta_fields');
 function genz_register_page_meta_fields($meta_boxes)
 {

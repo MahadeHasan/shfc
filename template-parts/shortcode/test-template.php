@@ -1,6 +1,5 @@
 <?php
 extract($args);
-
 ?>
 
 <div class="card p-3 mb-3">

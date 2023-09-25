@@ -24,7 +24,7 @@ add_shortcode('my_first_shortcode', 'my_first_shortcode_function');
 function shfc_render_posts_template($atts)
 {
     $attributes = shortcode_atts(array(
-                                    //field_id , default value
+        //field_id , default value
         'post__in' => shfc_get_option('post__in', []),
         'posts_per_page' => shfc_get_option('posts_per_page', -1),
     ), $atts, 'shfc_posts');
@@ -41,7 +41,6 @@ add_shortcode('shfc_posts', 'shfc_render_posts_template');
 
 
 //User value shortcode 
-
 function shfc_render_user_bio_fn($atts){
     $atts = shortcode_atts(
         array(
@@ -119,5 +118,44 @@ function shfc_get_option($field_id, $default){
 }
 // print_r( get_option('shfc_data'));
 
-///////////////////////////////////////////////////////////////
 
+// Shortcode 
+add_shortcode('test','shft_shortcode');
+function shft_shortcode($atts){
+    $atts = shortcode_atts(array(
+        'message' => "Lorem ipsum dolor sit amet.",
+        'message' => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, alias.",
+    ), $atts, 'test');
+
+    return implode(' ', $atts);
+}
+
+//Post Shortcode
+add_shortcode('test_shortcode','shft_test_shortcode');
+function shft_test_shortcode($atts, $content=''){
+    $atts = shortcode_atts(array(
+        'posts_per_page'     => -1,
+    ), $atts, 'test_shortcode');
+    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+    $args = array(
+        'post_type'         => 'post',
+        'post_status'       => 'publish',
+        'nopaging'          => true,
+        'posts_per_page'     => $atts['posts_per_page'],
+        'paged'             => $paged,
+    );
+    $query = new WP_Query($args);
+    if( $query->have_post()):
+        while($query->have_posts()):
+            $query->the_post();
+            $content .="<h1><a href='".get_the_permalink()."'>".get_the_title()."</a></h1>";
+            $content .="<p>".get_the_content()."</p>";
+        endwhile;
+     
+        wp_reset_query();
+    else:
+        $content .="<p>No Post Found</p>";
+    endif;
+
+    return $content;
+}
